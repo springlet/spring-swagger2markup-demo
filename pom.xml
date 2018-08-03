@@ -137,6 +137,13 @@
             <version>${swagger2markup.version}</version>
             <scope>test</scope>
         </dependency>
+             
+        <!--添加这个主要为了解决Junit和spring 版本不一致的问题。不然会报：Could not initialize class org.springframework.test.context.junit4.SpringJUnit4ClassRunner-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12-beta-3</version>
+        </dependency>
     </dependencies>
 
     <build>
